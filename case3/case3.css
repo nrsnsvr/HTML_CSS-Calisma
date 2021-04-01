@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.directive{
+    color: white;
+    background-color: rgb(36, 194, 160);
+    width: auto;
+    height: 28px;
+    border-radius: 3px;
+    border: transparent;
+    padding: 7px;
+    margin-right: 10px;
+}
+table{
+    border-collapse: collapse;
+    border:2px solid #F1F2F7 ;
+    margin-top: 20px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th{
+    color: orangered;
+    text-align: left;  
+
+}
+
+tr,td{
+    height: 50px;
+    width: 10%;
+}
+
+
+
+th,td{
+    padding: 5px;    
+    border: 2px solid #F1F2F7;
+}
+
+input{
+    height: 25px;
+    background-color: #EEEEEE;
+    border: solid 0.5px gray;
+    border-radius: 3px;
+    padding-left: 7px;
+    width: 85%;
+}
+
+
+
+.headers{
+    height: 30px;  
+    /* border-bottom:1.5px solid black; */
+   
+}
+
+.main-row{
+    height: 65px;
+    
+}
+.main-row>td:first-child{
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.main-row>td:first-child>label{
+    display: block;
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+}
+
+.main-row>td:first-child{
+    padding-left: 5px;
+}
+
+col:nth-child(n+7){
+background-color:#EFEFEF;
+}
+
+th:first-child{
+    width: 17%;    
+}
+
+tbody>tr>td:first-child{
+    color: gray;
+    font-size: 10px;
+    padding-left: 15px;
+}
+
+
+
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 0.5px gray;
+    padding: 10px;
+    padding-right: 0px;
+}
+.titleName{
+    color: orangered;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+#time{
+  
+    width: 173px;
+    height: 33px;
+    border: solid 0.5px gray;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+}
+
+
+.change{
+    width: 67px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    /* margin-right: 15px; */
+}
+
+.container{
+    padding:21px
+}
+
+.save {
+    margin-right: 0px;
+}
+
+.addProject{
+    color: white;
+    background-color: orangered;
+    width: auto;
+    height: 32px;
+    border-radius: 3px;
+    border: transparent;
+    padding: 7px;
+    margin-right: 10px;
+}
+
+.bottom-row{
+    font-weight: bold;
+}

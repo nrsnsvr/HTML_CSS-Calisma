@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="case1v3.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Personel Bilgileri</div>
+        <form action="#" class="body">
+            <div class="name x2">
+                <label for="name" class="title">Adı</label>
+                <input type="text" name="name" id="name" class="name" required />
+                <span class="validator">Bu alanı doldurmalısınız</span>
+            </div>
+            <div class="surname x2">
+                <label for="surname" class="title">Soyadı</label>
+                <input type="text" name="surname" id="surname" class="surname"  required/>
+                <span class="validator">Bu alanı doldurmalısınız</span>
+            </div>
+            <div class="birthdate x1">
+                <label for="birthdate" class="title">Doğum Tarihi</label>
+                <input type="date" name="birthdate" id="birthdate" class="birthdate" />
+            </div>
+            <div class="citizen x1">
+                <label for="citizen" class="title">Uyruğu</label><input type="text" name="citizen" id="citizen"
+                    class="citizen" />
+            </div>
+            <div class="workPermit x1"><label for="workPermit" class="title">Çalışma İzni Bitişi</label><input
+                    type="date" name="workPermit" id="workPermit" class="workPermit"></div>
+            <div class="tcNo x1">
+                <label for="tcNo" class="title">TC Kimlik Numarası</label>
+                <input type="number" name="tcNo" id="tcNO" required maxlength="11" minlength="11" required>
+                <span class="validator" for="tcNO">Bu alanı doldurmalısınız</span>
+            </div>
+            <div class="gender x1">
+                <label for="gender" class="title">Cinsiyet</label>
+                <select name="gender" id="gender">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="status x1">
+                <label for="status" class="title">Medeni Hali</label>
+                <select name="status" id="status">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="childrenNumber x1">
+                <label for="childrenNumber" class="title">Çocuk Sayısı</label>
+                <input type="number" name="childrenNumber" id="childrenNumber" value="0">
+            </div>
+            <div class="blood x1">
+                <label for="blood" class="title">Kan Grubu</label>
+                <select name="blood" id="blood">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="driverLicence x1">
+                <label for="driverLicence" class="title">Ehliyet Bilgisi</label>
+                <select name="driverLicence" id="driverLicence">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="disableStatus x1">
+                <label for="disableStatus" class="title">Engel Durumu</label>
+                <select name="disableStatus" id="disableStatus">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="description x4">
+                <label for="description" class="title">Açıklama ve Notlar</label>
+                <textarea name="description" id="description"></textarea>
+            </div>
+
+            <div class="header2">Şirket Bilgileri</div>
+            <div class="company x2">
+                <label for="company" class="title">Şirket</label>
+                <select name="company" id="company">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="entranceDate x1">
+                <label for="entranceDate" class="title">Giriş Tarihi</label>
+                <input type="date" name="entranceDate" id="entranceDate">
+            </div>
+            <div class="job x1">
+                <label for="job" class="title">Meslek</label>
+                <input type="text" name="job" id="job">
+            </div>
+            <div class="department x2">
+                <label for="department" class="title">Departman</label>
+                <select name="department" id="department">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="duty x1">
+                <label for="duty" class="title">Görevi</label>
+                <input type="text" name="duty" id="duty">
+            </div>
+            <div class="cardNo x1">
+                <label for="cardNo" class="title">Kart No</label>
+                <input type="number" name="cardNo" id="cardNo">
+            </div>
+            <div class="department x1">
+                <label for="workType" class="title">Çalışma Tipi</label>
+                <select name="workType" id="workType">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="registerNo x1">
+                <label for="registerNo" class="title">Sicil No</label>
+                <input type="number" name="registerNo" id="registerNo" value="00083">
+            </div>
+            <div class="email x2 validation">
+                <label for="email" class="title">İş Eposta Adresi</label>
+                <input type="email" name="email" id="email" required>
+                <span  for="email" class="validator">Bu alanı doldurmalısınız</span>
+            </div>
+            <div class="special x1">
+                <label for="special" class="title">Özel Durum</label>
+                <select name="special" id="special">
+                    <option value=""></option>
+                </select>
+            </div>
+
+
+        </form>
+        <div class="footer">
+            <button class="btn btn-save">Formu Kaydet</button>
+            <button class="btn btn-continue">Devam</button>
+        </div>
+    </div>
+</body>
+
+</html>

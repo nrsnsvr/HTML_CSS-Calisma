@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 1fr 16fr 1fr;
+    padding: 20px;
+    
+}
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 25px;
+
+}
+
+.body>div{
+    margin-bottom: 2px;
+}
+
+label.title{
+    display: block;
+    padding-bottom: 3px;
+    
+    
+}
+
+input, select, textarea{
+    height: 50%;
+    width: 100%;
+    display: inline-block;
+    background-color: #EEEEEE;
+    border: 0.25px solid rgb(199, 198, 198);
+    border-radius: 1px;
+    padding-left: 10px;
+    font-size: 10px ;
+    box-shadow: 1px 1px 2px 0px rgba(153, 153, 153, 0.75);
+}
+
+input:invalid{
+    outline: 1px red solid;
+}
+
+input:focus:invalid + .validator{
+display: inline-block;
+font-size: 8px;
+color: red;
+}
+
+.header{
+    color: #DE7E18;
+    font-size: 14px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 5px;
+}
+
+.header2{
+    grid-column: span 4;
+}
+
+.x2{
+    grid-column: span 2;
+}
+
+.x4{
+    grid-column: span 4;    
+}
+
+span.validator{
+
+    display: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    color: white;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    border: transparent;
+    margin-right: 15px;
+}
+.btn-save{
+    background-color: #34BFA3;
+}
+
+.btn-continue{
+    background: #E28118;
+
+}
